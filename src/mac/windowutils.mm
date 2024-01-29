@@ -22,7 +22,7 @@ Napi::Value allowWindowFullScreenTiling(Napi::Env env, unsigned char* buffer){
 
   NSWindow* window = [view window];
 
-  window.collectionBehavior = NSWindowCollectionBehaviorFullScreenAllowsTiling;
+  window.collectionBehavior = NSWindowCollectionBehaviorAuxiliary;
   
   return Napi::Boolean::New(env, true);
 }

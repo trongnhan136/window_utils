@@ -1,0 +1,1 @@
+const windowUtilsJs = require("./index");

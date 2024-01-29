@@ -1,0 +1,35 @@
+{
+  "name": "window-utils",
+  "version": "1.1.0",
+  "description": "Electron window utils",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "install": "node-gyp-build",
+    "prebuild": "prebuildify -t 16.0.0 --napi --strip",
+    "prebuild-darwin-universal": "prebuildify -t 16.0.0 --napi --strip --arch x64+arm64",
+    "prebuild-linux-x64": "prebuildify -t 16.0.0 --napi --strip",
+    "prebuild-linux-arm64": "prebuildify -t 16.0.0 --napi --strip",
+    "prebuild-win32-x86": "prebuildify -t 16.0.0 --napi --strip",
+    "prebuild-win32-x64": "prebuildify -t 16.0.0 --napi --strip"
+  },
+  "keywords": [
+    "desktop"
+  ],
+  "author": "Nhannt",
+  "license": "MIT",
+  "gypfile": true,
+  "binary": {
+    "napi_versions": [
+      3
+    ]
+  },
+  "homepage": "https://hanbiro.com",
+  "dependencies": {
+    "node-addon-api": "^4.2.0",
+    "node-gyp-build": "^4.3.0"
+  },
+  "devDependencies": {
+    "prebuildify": "^5.0.0"
+  }
+}

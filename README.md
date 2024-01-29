@@ -1,1 +1,2 @@
-# window_utils
+# detector-fullscreen
+
